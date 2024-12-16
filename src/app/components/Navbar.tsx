@@ -133,7 +133,7 @@ export function Navbar() {
           {navItems.map((item) => (
             <Link
               key={item}
-              href={`/${item.tolowerCase()}`}
+              href={`/${item.toLowerCase()}`}
               className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
             >
               {item}
