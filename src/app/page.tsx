@@ -11,12 +11,12 @@ import NewsletterSection from "./components/News";
 export default function Home() {
   return (
     <>
-    <Navbar/>
+   
     <HeroBanner />
     <FeaturesSection/>
     <HeroSection/>
     <NewsletterSection/>
-    <Footer/>
+   
     </>
   )
 }

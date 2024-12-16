@@ -17,8 +17,8 @@ import { Input } from "./input"
 
 const navItems: string[] = [
   'Plant pots',
-  'Ceramics',
-  'Tables',
+  'About',
+  'Products',
   'Chairs',
   'Crockery',
   'Tableware',
@@ -56,10 +56,13 @@ export function Navbar() {
 
           {/* Right side: Cart & Profile Icons (hidden on small screens) */}
           <div className="hidden lg:flex items-center">
-            <Button variant="ghost" size="icon" className="ml-4 text-gray-400 hover:text-gray-500">
-              <ShoppingCart className="h-6 w-6" />
-              <span className="sr-only">Shopping cart</span>
-            </Button>
+            <Link href="/carts" className='flex justify-center items-center gap-x-1'>
+       
+              <ShoppingCart className="text-xs" />
+              <span className='text-sm text-center mb-3 text-white bg-red-500 h-[20px] w-[20px] rounded-[50%]'>2</span>
+        
+          
+            </Link>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <Button variant="ghost" size="icon" className="ml-4 text-gray-400 hover:text-gray-500">
@@ -105,7 +108,7 @@ export function Navbar() {
                   {navItems.map((item) => (
                     <Link
                       key={item}
-                      href="products"
+                      href={`${item}`}
                       className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
                     >
                       {item}
@@ -130,7 +133,7 @@ export function Navbar() {
           {navItems.map((item) => (
             <Link
               key={item}
-              href="products"
+              href={`${item}`}
               className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
             >
               {item}

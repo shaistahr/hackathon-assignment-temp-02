@@ -17,7 +17,7 @@ export default function HeroSection() {
       </div>
       <div className="bg-gray-200 aspect-square md:aspect-auto">
         <img
-          src="/image Block.png"
+          src="/Image Block.png" 
           alt="Interior design showcase"
           className="w-full h-full object-cover"
         />
