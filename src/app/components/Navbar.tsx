@@ -105,16 +105,41 @@ export function Navbar() {
               </SheetTrigger>
               <SheetContent side="right">
                 <nav className="flex flex-col space-y-4 mt-4">
-                  {navItems.map((item) => (
-                    <Link
-                      key={item}
-                      href={`/${item.toLowerCase()}`}
-                      className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
-                    >
-                      {item}
-                      {/* Comment */}
-                    </Link>
-                  ))}
+
+  <Link
+    href="/Plant" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
+>
+Plant pots
+  </Link>
+  <Link
+    href="/about-us" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
+>
+   About
+  </Link>
+  <Link
+    href="/all-products" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
+>
+Products
+  </Link>
+
+  <Link
+    href="/chair" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
+>
+Chairs
+  </Link>
+
+  <Link
+    href="/Crockery" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
+>
+Crockery
+  </Link>
+  <Link
+    href="/Cutlery" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
+>
+Cutlery
+  </Link>
+
+
                   <Button variant="ghost" size="sm" className="justify-start text-gray-400 hover:text-gray-500">
                     <ShoppingCart className="h-5 w-5 mr-2" />
                     <span>Cart</span>
@@ -131,15 +156,38 @@ export function Navbar() {
 
         {/* Navigation Links */}
         <div className="hidden lg:flex lg:items-center lg:justify-center flex-wrap gap-4 mt-4">
-          {navItems.map((item) => (
-            <Link
-              key={item}
-              href={`/${item.toLowerCase()}`}
-              className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
-            >
-              {item}
-            </Link>
-          ))}
+        <Link
+    href="/Plant" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
+>
+Plant pots
+  </Link>
+  <Link
+    href="/about-us" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
+>
+   About
+  </Link>
+  <Link
+    href="/all-products" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
+>
+Products
+  </Link>
+
+  <Link
+    href="/chair" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
+>
+Chairs
+  </Link>
+
+  <Link
+    href="/Crockery" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
+>
+Crockery
+  </Link>
+  <Link
+    href="/Cutlery" className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
+>
+Cutlery
+  </Link>
         </div>
       </div>
     </nav>
