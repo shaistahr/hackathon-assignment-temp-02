@@ -36,7 +36,7 @@ export default function Footer() {
           <div className="space-y-6">
             <h3 className="text-base font-normal">Our company</h3>
             <nav className="flex flex-col space-y-4">
-              <a href="#" className="text-sm hover:underline">About us</a>
+              <a href="/about" className="text-sm hover:underline">About us</a>
               <a href="#" className="text-sm hover:underline">Vacancies</a>
               <a href="#" className="text-sm hover:underline">Contact us</a>
               <a href="#" className="text-sm hover:underline">Privacy</a>
