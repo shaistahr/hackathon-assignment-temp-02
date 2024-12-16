@@ -112,6 +112,7 @@ export function Navbar() {
                       className="text-gray-500 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200 ease-in-out"
                     >
                       {item}
+                      {/* Comment */}
                     </Link>
                   ))}
                   <Button variant="ghost" size="sm" className="justify-start text-gray-400 hover:text-gray-500">
